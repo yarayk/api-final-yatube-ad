@@ -9,7 +9,7 @@ class Group(models.Model):
     slug = models.SlugField(unique=True)
     description = models.TextField()
 
-    def __str__(self):
+    def __str__(self) -> str:
         return self.title
 
 
@@ -25,7 +25,7 @@ class Post(models.Model):
         null=True, blank=True, related_name='posts'
     )
 
-    def __str__(self):
+    def __str__(self) -> str:
         return self.text
 
 

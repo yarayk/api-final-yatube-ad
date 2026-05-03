@@ -44,7 +44,7 @@ class FollowSerializer(serializers.ModelSerializer):
         model = Follow
         fields = ('user', 'following')
 
-    def validate(self, attrs):
+    def validate(self, attrs: dict) -> dict:
         request = self.context.get('request')
         following = attrs.get('following')
         if request.user == following:
