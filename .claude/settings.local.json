@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-Content *)",
+      "Bash(python manage.py makemigrations)",
+      "PowerShell(Get-Command *)",
+      "PowerShell(& \"C:\\\\Users\\\\yaros\\\\api-final-yatube-ad\\\\.venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\yaros\\\\api-final-yatube-ad\\\\yatube_api\\\\manage.py\" makemigrations 2>&1)",
+      "PowerShell(& \"C:\\\\Users\\\\yaros\\\\api-final-yatube-ad\\\\.venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\yaros\\\\api-final-yatube-ad\\\\yatube_api\\\\manage.py\" migrate 2>&1)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\yaros\\\\api-final-yatube-ad\" -Recurse)",
+      "Bash(Measure-Object -Property Length -Sum)",
+      "Bash(Select-Object -ExpandProperty Sum)",
+      "Bash(git rev-list *)",
+      "Bash(git cat-file *)",
+      "Bash(sort -k3 -n -r)",
+      "Bash(Select-String -Pattern \"^\\\\.venv|^db\\\\.sqlite3\")",
+      "Bash(Select-Object -First 20)",
+      "PowerShell(python -m pip show git-filter-repo 2>&1)",
+      "PowerShell(python --version 2>&1)",
+      "Bash(pip3 show *)",
+      "PowerShell(git ls-files | Where-Object { $_ -notmatch \"^\\\\.venv\" -and $_ -notmatch \"__pycache__\" } | Sort-Object)"
+    ]
+  }
+}
